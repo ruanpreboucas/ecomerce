@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    font-family: Tahoma;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+}
+
+.content-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.MainContainer{
+    background-color: white;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ProdutosSection{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    gap:50px;
+    flex-wrap:wrap ;
+    padding-left: 6%;
+   
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    border-width: 1;
+    background-color: coral;
+}
+.babu{
+    background-color:rgb(137, 43, 226);
+}
+.compra{
+    border-radius: 10%;
+    height: 30px;
+}
+
+.finalizar{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.finalizar fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
