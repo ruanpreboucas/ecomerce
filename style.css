@@ -1,74 +1,180 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(243, 243, 243);
+body {
+    background-color: rgba(243, 243, 243, 0.822);
     display: flex;
     justify-content: center;
     font-family: Tahoma;
     flex-direction: column;
 }
 
-main{
+main {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:150px;
+    gap: 150px;
 }
 
-.content-main{
+.content-main {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.MainContainer{
-    background-color: white;
-    height:100%;
+
+.MainContainer {
+    background-color: rgba(243, 243, 243, 0.822);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-.ProdutosSection{
+
+.MainContainerVitrine {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 3%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-color: rgba(0, 0, 0, 0.199);
+}
+
+
+.ProdutosSection {
     display: flex;
     flex-direction: row;
-    background-color: blueviolet;
-    gap:50px;
-    flex-wrap:wrap ;
+    gap: 70px;
+    flex-wrap: wrap;
     padding-left: 6%;
-   
+
 }
-fieldset{
+
+.ProdutosSection fieldset {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:20%;
-    border-width: 1;
-    background-color: coral;
+    border-radius: 2%;
+    width: 80px;
+    gap: 10px
 }
-.babu{
-    background-color:rgb(137, 43, 226);
+
+.boxprodut {
+    background-color: rgb(255, 255, 255);
 }
-.compra{
-    border-radius: 10%;
+
+.desconto {
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 200px;
+
+}
+
+.buttoncompra {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    color: white;
     height: 30px;
+    width: 200px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.199);
+    background-color: rgb(40, 136, 27);
 }
 
-.finalizar{
+.finalizar {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color:rgba(18, 223, 18, 0.822);
+    padding-top: 10px;
 }
 
-.finalizar fieldset{
+.finalizar fieldset {
+    margin: 1%;
     display: flex;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:20px
+    gap: 20px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.164);
+}
+
+.finalizar input {
+    border: 1px solid;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* CADASTRAR CLIENTE*/
+.abc {
+    width: 50%;
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px gray;
+    border-color: rgba(0, 0, 0, 0.164);
+    flex-direction: column;
+}
+
+.efg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.efg img {
+    height: 30%;
+    width: 25%;
+}
+
+.descente {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5%;
+    margin: 5%;
+}
+
+.efg input {
+    margin: 5%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.Addheader {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: white;
+    background-color: rgb(87, 51, 146);
+    height: 120px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
 }

@@ -44,7 +44,8 @@ if (isset($_POST['action']) && $_POST['action'] == 'finalizarCompra') {
                 <form method="POST" action="vitrine.php">
                     <input type="text" name="rgComprador" placeholder="Digite o seu RG" />
                     <input type="hidden" name="action" value="finalizarCompra">
-                    <input type="submit" value="Finalizar compra" />
+                    <input class="m" type="submit" value="FINALIZAR" style="background-color:rgb(0, 140, 255); color:white; padding:5px;border: 1px solid;   border-radius: 5px; border-color:black;  box-shadow: 0.5px 0.5px 5px gray;
+    border-color: rgba(0, 0, 0, 0.164);  font-family: 'Segoe UI', Tahoma, Geneva," />
                 </form>
             </fieldset>
         </div>
@@ -58,14 +59,22 @@ if (isset($_POST['action']) && $_POST['action'] == 'finalizarCompra') {
                     <h3>
                         <?= $listaDeProdutos[$i]->nome ?>
                     </h3>
-                    <img src="<?= $listaDeProdutos[$i]->imagem ?>" alt="<?= $listaDeProdutos[$i]->nome ?>" width="200"
-                        height="200"><br>
-                    <div>R$
+                    <img src="<?= $listaDeProdutos[$i]->imagem ?>" alt="<?= $listaDeProdutos[$i]->nome ?>" width="150"
+                        height="150"><br>
+                    <div class="desconto">
+                        <p>30% off!</p>
+                    </div>
+                    <div style="display:flex; flex-direction: rowtext-align: start;
+                    color: black;
+                    width: 200px;
+                    padding-left:10px ;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" ;>
+                        <p> R$</p>
                         <?= $listaDeProdutos[$i]->preco ?>
                     </div>
                     <form action="vitrine.php" method="POST">
                         <input type="hidden" name="produtoSelecionado" value="<?= $listaDeProdutos[$i]->id ?>" />
-                        <input class="compra" type="submit" value="Comprar agora!">
+                        <input class="buttoncompra" type="submit" value="COMPRAR">
                     </form>
                 </fieldset>
 
